@@ -1,10 +1,8 @@
-//=================================Setup Required Variables===============================
 
 var Table = require('cli-table');
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 
-//=================================Connect to SQL database===============================
 
 var connection = mysql.createConnection({
     host: "localhost",
@@ -24,7 +22,6 @@ connection.connect(function(err) {
     startPrompt();
 });
 
-//=================================Inquirer introduction===============================
 
 function startPrompt() {
 
@@ -48,7 +45,6 @@ function startPrompt() {
     });
 }
 
-//=================================View Inventory===============================
 
 function inventoryView() {
 
@@ -88,7 +84,6 @@ function inventoryView() {
     }
 }
 
-//=================================View Low Inventory===============================
 
 //Connect to database to show any inventory with less than 5 in stock quantity
 
@@ -132,7 +127,6 @@ function lowInventory() {
     }
 }
 
-//=================================Add Inventory===============================
 
 function addInventory() {
 
@@ -162,7 +156,6 @@ function addInventory() {
       }
 
 
-//=================================Add New Product===============================
 
 function addProduct() {
 
