@@ -1,7 +1,7 @@
 {
   "name": "bamazon",
   "version": "1.0.0",
-  "description": "Homework 15",
+  "description": "Homework week 15",
   "main": "bamazonCustomer.js",
   "scripts": {
     "test": "none"
