@@ -9,10 +9,10 @@ var connection = mysql.createConnection({
     port: 3306,
 
     // Your username
-    user: "root",
+    user: "newuser",
 
     // Your password
-    password: "added to the comments",
+    password: "1234",
     database: "bamazonDB"
 });
 
